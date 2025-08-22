@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Com">
+      <UniqueIdentifier>{d628f87c-517b-49e8-91ea-7b34d6d742c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AFX">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Export">
+      <UniqueIdentifier>{830161f0-05a0-4129-97bc-719d1274df38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{21d2445d-0250-442e-b2d1-00cb44ff0231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\Master">
+      <UniqueIdentifier>{5a9e2271-67e3-4431-8fea-b55f66a7f1ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\Slave">
+      <UniqueIdentifier>{b291b285-03df-4cf7-bbf0-634dac8bed56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>AFX</Filter>
+    </ClCompile>
+    <ClCompile Include="UniversalSerialProtocol.cpp">
+      <Filter>Protocol\Master</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleSerialProtocol.cpp">
+      <Filter>Protocol\Master</Filter>
+    </ClCompile>
+    <ClCompile Include="hxSerialProtocol.cpp">
+      <Filter>AFX</Filter>
+    </ClCompile>
+    <ClCompile Include="Export.cpp">
+      <Filter>Export</Filter>
+    </ClCompile>
+    <ClCompile Include="ComPort.cpp">
+      <Filter>Com</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>AFX</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>AFX</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>AFX</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleSerialProtocol.h">
+      <Filter>Protocol\Master</Filter>
+    </ClInclude>
+    <ClInclude Include="UniversalSerialProtocol.h">
+      <Filter>Protocol\Master</Filter>
+    </ClInclude>
+    <ClInclude Include="hxSerialProtocol.h">
+      <Filter>AFX</Filter>
+    </ClInclude>
+    <ClInclude Include="ComPort.h">
+      <Filter>Com</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\hxSerialProtocol.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="hxSerialProtocol.def">
+      <Filter>AFX</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hxSerialProtocol.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

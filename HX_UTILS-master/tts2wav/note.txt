@@ -1,0 +1,4 @@
+1. windows install tts lib
+	CN-Lili,CN-Hui,CN-Wang,CN-Liang etc.
+2. Windows Install Application :
+	Text To Speech WAV.exe		use for test tts lib 

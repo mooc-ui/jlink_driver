@@ -1,0 +1,9 @@
+#define byte unsigned char
+typedef unsigned int u32;
+struct Record 	// 记录表
+{
+	inta  aa;	//数据,asc
+	byte time[7];	//时间,yyyymmddHHMMSS	
+	u32 a;			
+	unsigned int b;
+};

@@ -1,0 +1,357 @@
+Dependencies for Project 'utils_test', Target 'DEBUG': (DO NOT MODIFY !)
+F (.\Startup.s)(0x582C25AF)(--cpu ARM7TDMI -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\debug\startup.lst --xref -o .\debug\startup.o --depend .\debug\startup.d)
+F (.\main.c)(0x582C26C0)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\main.o --omf_browse .\debug\main.crf --depend .\debug\main.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (C:\Keil\ARM\Inc\Philips\LPC23xx.h)(0x51C7B93C)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\hx_atcmd.c)(0x582C1C89)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hx_atcmd.o --omf_browse .\debug\hx_atcmd.crf --depend .\debug\hx_atcmd.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+F (..\hx_board.c)(0x582E62D9)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hx_board.o --omf_browse .\debug\hx_board.crf --depend .\debug\hx_board.d)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D521E)
+I (D:\HX_UTILS\hx_term.h)(0x582D552B)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582C22CC)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\hx_clcd.c)(0x58255BA7)()
+F (..\hx_cpu.c)(0x582D6637)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hx_cpu.o --omf_browse .\debug\hx_cpu.crf --depend .\debug\hx_cpu.d)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D521E)
+I (D:\HX_UTILS\hx_term.h)(0x582D552B)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582C22CC)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\cpu\lpc2368_reg.h)(0x58086DFD)
+I (D:\HX_UTILS\cpu\lpc2368_conf.h)(0x580870FA)
+F (..\hx_debug.c)(0x582D29E8)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hx_debug.o --omf_browse .\debug\hx_debug.crf --depend .\debug\hx_debug.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+F (..\hx_device.c)(0x582D73A4)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hx_device.o --omf_browse .\debug\hx_device.crf --depend .\debug\hx_device.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+F (..\hx_term.c)(0x582D7393)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hx_term.o --omf_browse .\debug\hx_term.crf --depend .\debug\hx_term.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+F (..\hx_term_cmds.c)(0x582D8293)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hx_term_cmds.o --omf_browse .\debug\hx_term_cmds.crf --depend .\debug\hx_term_cmds.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\HX_UTILS\hxd_param.h)(0x582D80D3)
+F (..\hx_utils.c)(0x582D81BF)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hx_utils.o --omf_browse .\debug\hx_utils.crf --depend .\debug\hx_utils.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (D:\HX_UTILS\hxd_param.h)(0x582D80D3)
+F (..\hx_ver_def.c)(0x57D62237)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hx_ver_def.o --omf_browse .\debug\hx_ver_def.crf --depend .\debug\hx_ver_def.d)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+F (..\hxd_uart.c)(0x582D325C)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hxd_uart.o --omf_browse .\debug\hxd_uart.crf --depend .\debug\hxd_uart.d)
+I (D:\HX_UTILS\hxd_uart.h)(0x582D306A)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
+F (..\hxl_serial.c)(0x582C0DF6)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hxl_serial.o --omf_browse .\debug\hxl_serial.crf --depend .\debug\hxl_serial.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+F (..\jlink_dcc.c)(0x5816BF90)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\jlink_dcc.o --omf_browse .\debug\jlink_dcc.crf --depend .\debug\jlink_dcc.d)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\rt_sys.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+F (..\me3630.c)(0x581320DB)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\me3630.o --omf_browse .\debug\me3630.crf --depend .\debug\me3630.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\mg3732.c)(0x582D6586)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\mg3732.o --omf_browse .\debug\mg3732.crf --depend .\debug\mg3732.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\ne4110s.c)(0x581073B5)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\ne4110s.o --omf_browse .\debug\ne4110s.crf --depend .\debug\ne4110s.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\rak415.c)(0x58107935)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\rak415.o --omf_browse .\debug\rak415.crf --depend .\debug\rak415.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\sim800c.c)(0x5811CDF5)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\sim800c.o --omf_browse .\debug\sim800c.crf --depend .\debug\sim800c.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\sim7100c.c)(0x5811CD3F)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\sim7100c.o --omf_browse .\debug\sim7100c.crf --depend .\debug\sim7100c.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\sim7600c.c)(0x5811CD2B)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\sim7600c.o --omf_browse .\debug\sim7600c.crf --depend .\debug\sim7600c.d)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\cpu\cpu_lpc2378.c)(0x582D71D4)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\cpu_lpc2378.o --omf_browse .\debug\cpu_lpc2378.crf --depend .\debug\cpu_lpc2378.d)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\cpu\lpc2368_reg.h)(0x58086DFD)
+I (D:\HX_UTILS\cpu\lpc2368_conf.h)(0x580870FA)
+F (..\board\brd_dq1200.c)(0x582D819E)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\brd_dq1200.o --omf_browse .\debug\brd_dq1200.crf --depend .\debug\brd_dq1200.d)
+I (D:\HX_UTILS\hx_board.h)(0x582D65F5)
+I (D:\HX_UTILS\hx_cpu.h)(0x582D6635)
+I (D:\HX_UTILS\board\brd_dq1200.h)(0x581317E2)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (D:\HX_UTILS\hxd_uart.h)(0x582D306A)
+I (D:\HX_UTILS\hxd_param.h)(0x582D80D3)
+F (..\hxd_param.c)(0x582D81A9)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork --split_sections -ID:\HX_UTILS --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-D__DEBUG__ -o .\debug\hxd_param.o --omf_browse .\debug\hxd_param.crf --depend .\debug\hxd_param.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_utils.h)(0x582C1CD3)
+I (D:\HX_UTILS\int.h)(0x58084053)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\HX_UTILS\hx_device.h)(0x582D776C)
+I (D:\HX_UTILS\hx_term.h)(0x582D73D0)
+I (D:\HX_UTILS\hxl_serial.h)(0x582C0FEF)
+I (D:\HX_UTILS\hx_atcmd.h)(0x5811CB1E)
+I (D:\HX_UTILS\hx_serial.h)(0x5823E93E)
+I (D:\HX_UTILS\hx_debug.h)(0x582E7E6D)
+I (D:\HX_UTILS\hx_ver_def.h)(0x57D623B5)
+I (D:\HX_UTILS\hx_clcd.h)(0x58255BA5)
+I (D:\HX_UTILS\hxd_param.h)(0x582D80D3)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)

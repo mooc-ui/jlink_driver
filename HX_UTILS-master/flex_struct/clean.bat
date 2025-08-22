@@ -1,0 +1,1 @@
+del *.bak *.c *.h *.obj *.exe

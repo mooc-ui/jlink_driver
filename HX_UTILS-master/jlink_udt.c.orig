@@ -1,0 +1,225 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <rt_sys.h>
+#include <rt_misc.h>
+
+#define STDIN             (0)
+#define STDOUT            (1)
+#define STDERR            (2)
+
+const char __stdin_name[] =  ":stdin";
+const char __stdout_name[] =  ":stdout";
+const char __stderr_name[] =  ":stderr";
+
+FILEHANDLE _sys_open(const char *name, int openmode)
+{
+	(void)openmode;
+	if(strcmp(name,__stdin_name)==0)
+		return STDIN;
+	else if(strcmp(name,__stdout_name)==0)
+		return STDOUT;
+	else if(strcmp(name,__stderr_name)==0)
+		return STDERR;
+	else
+		return STDERR; //default to stderr
+}
+int _sys_close(FILEHANDLE fh)
+{
+	(void)fh;
+	return 0;
+}
+int _sys_write(FILEHANDLE fh, const unsigned char *buf,
+               unsigned len, int mode)
+{
+  //your_device_write(buf, len);
+  return 0;
+}
+int _sys_read(FILEHANDLE fh, unsigned char *buf,
+              unsigned len, int mode)
+{
+  return -1; /* not supported */
+}
+void _ttywrch(int ch)
+{
+  char c = ch;
+  fputc(c, stdout);
+  fflush(stdout);
+}
+int _sys_istty(FILEHANDLE fh)
+{
+	if(fh>=0 && fh<=2)
+		return 1;
+  return 0; /* buffered output */
+}
+int _sys_seek(FILEHANDLE fh, long pos)
+{
+  return -1; /* not supported */
+}
+long _sys_flen(FILEHANDLE fh)
+{
+  return -1; /* not supported */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#include <string.h>
+//#include <stdio.h>
+//#include <stdarg.h>
+//#include <rt_sys.h>
+//#include <stdlib.h>
+
+////#ifdef __DEBUG__
+//#define __DCC_ENABLE_RETARGET__
+////#endif
+
+//#if 0
+//int main(void)
+//{
+//	for(int i=0;i<16;i++)
+//		fprintf((FILE*)i,"stdin");
+//	fprintf(stdin,"\r\nstdin");
+//	fprintf(stdout,"stdout");
+//	fprintf(stderr,"stderr");
+//	while(1);
+//}
+//#endif
+
+
+//#ifndef uint
+//#define byte	unsigned char
+//#define uchar	unsigned char
+//#define uint	unsigned int
+//#define ushort	unsigned short
+//#endif
+
+
+////must be in ram
+//#define TRAD_CTRLBLK_ADDR			(0x10001000)		
+
+////terminal use ram access directlly  
+//typedef __packed struct __TRAD
+//{
+//	unsigned int flag;
+//	unsigned int data;
+//} TRAD_T;
+
+//TRAD_T trad_tx __attribute__((at(TRAD_CTRLBLK_ADDR))) = {0};
+//TRAD_T trad_rx __attribute__((at(TRAD_CTRLBLK_ADDR+sizeof(TRAD_T)))) = {0};
+
+
+//static void jlink_dcc_putc(int ch, int d) {
+//    
+//	int res;
+//	trad_tx.data = d | 0x54000000|(ch<<8);
+//	trad_tx.flag = 1;
+//	do{
+//		res = trad_tx.flag;
+//	}while(res);
+//}
+//static int jlink_dcc_getc(int *d)
+//{
+//  	int res;
+//	res = trad_rx.flag;
+//	if(res){
+//		res = trad_rx.data;
+//		if((res&0xFF000000u) == 0x55000000u ){
+//			trad_rx.data = 0x00000000;
+//			*d =  res & 0x0FFu;
+//			return 1;
+//		}
+//		trad_rx.flag = 0x00000000;
+//	}
+//	return 0;
+//}
+////==================================================
+//struct __FILE {
+//    int handle; /* Add whatever you need here */
+//};
+//FILE __stdout;
+//FILE __stdin;
+//FILE __stderr;
+//int fclose(FILE* f) {
+//    return (0);
+//}
+//int fseek (FILE *f, long nPos, int nMode)  {
+//    return (0);
+//}
+//int fflush (FILE *f)  {
+//    return (0);
+//}
+//int ferror(FILE *f) {
+//    return (EOF);
+//}
+
+//#ifdef __DCC_ENABLE_RETARGET__
+////#pragma import(__use_no_semihosting_swi)
+//int fgetc_noblock(FILE *f) {
+//	int res;
+//	int c;
+//	(void)f;
+//	res = jlink_dcc_getc(&c);
+//	if(res)
+//		return 0xffu & c;
+//    return EOF;
+//}
+//int fgetc_block(FILE *f) {
+//	int res;
+//	do{
+//		res = fgetc_noblock(f);
+//	}while(res == EOF);
+//	return res;
+//}
+//int fgetc(FILE *f) {
+//	return fgetc_noblock(f);
+//}
+//int _fputc(int c, FILE *f) {
+//	int ch = (int)f;
+//	if(f==&__stdin) ch='g';		//green
+//	if(f==&__stdout) ch='w';	//white
+//	if(f==&__stderr) ch='r';	//red
+//	jlink_dcc_putc(ch,c);
+//	return c;
+//	
+////	if(pos>=PUT_BUF_SIZE){
+////		flush();
+////	}
+////    buff[pos] = c;
+////    pos++;
+////    return c;
+//	
+////	jlink_osterm_send_char(c);
+////	return c;
+//}
+//int fputc(int c, FILE *f){
+////	if(c == '\t'){
+////		_fputc(' ',f);
+////		_fputc(' ',f);
+////		_fputc(' ',f);
+////		return _fputc(' ',f);
+////	}else 
+////	
+//	if(c == '\n'){
+//		_fputc('\r',f);
+//		return _fputc('\n',f);
+//	}else{
+//		return _fputc(c,f);
+//	}
+//}
+
+//#else
+//int fgetc(FILE *f){(void*)f;return EOF;}
+//int fputc(int c, FILE *f){(void)c;(void)f;return c;}	
+//#endif

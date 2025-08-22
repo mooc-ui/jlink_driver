@@ -1,0 +1,10 @@
+Dependencies for Project 'dcc_test', Target 'Target 1': (DO NOT MODIFY !)
+F (.\LPC2300.s)(0x51C7B90E)(--cpu ARM7TDMI -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\lpc2300.lst --xref -o .\lpc2300.o --depend .\lpc2300.d)
+F (.\main.c)(0x582EC99D)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\jlink_dcc.c)(0x582EC9C2)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\jlink_dcc.o --omf_browse .\jlink_dcc.crf --depend .\jlink_dcc.d)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\rt_sys.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)

@@ -1,0 +1,66 @@
+#include "hx_utils.h"
+#include "./board/vd7400.h"
+#include "./cpu/lpc1769/cpu.h"
+#include "./cpu/lpc1769/cpu.c"
+
+
+void UARTX_DIS_INTR(int id)	
+{ 
+	CPU_UARTX_DIS_INTR(id);
+}
+
+void UARTX_EN_INTR(int id)	
+{ 
+	CPU_UARTX_EN_INTR(id);
+}
+
+void UART_TX_START_BYTE(int id,int data)
+{
+	if(id==2)
+		LPC_GPIO1->FIOSET |= (1<<29);	//485 允许发送
+	CPU_UART_TX_START_BYTE(id,data);
+}
+
+void UART_TX_END_SESSION(int id)
+{
+	if(id==2){
+		LPC_GPIO1->FIOCLR |= (1<<29);	//485允许接受
+	}
+	CPU_UART_TX_END_SESSION(id);
+}
+
+int HX_UART_REOPEN(int id, int bps)
+{
+	if(id==0) {
+		LPC_PINCON->PINSEL0 &= ~0x000000F0;
+		LPC_PINCON->PINSEL0 |= 0x00000050;  /* RxD0 is P0.3 and TxD0 is P0.2 */
+		LPC_PINCON->PINMODE0 &= ~0x000000F0;
+		LPC_PINCON->PINMODE0 |= 0x00000050;
+	}else if(id==1) {
+		LPC_PINCON->PINSEL4 &= ~0x0000000F;
+		LPC_PINCON->PINSEL4 |= 0x0000000A;	/* Enable RxD1 P2.1, TxD1 P2.0 */
+		LPC_PINCON->PINMODE4 &= ~0x0000000F;
+		LPC_PINCON->PINMODE4 |= 0x00000005;
+	}else if(id==2) {
+		LPC_PINCON->PINSEL0 &= ~0x00F00000;
+		LPC_PINCON->PINSEL0 |= 0x00500000;	/* Enable RxD1 P0.11, TxD1 P0.10 */
+		LPC_PINCON->PINMODE0 &= ~0x00F00000;
+		LPC_PINCON->PINMODE0 |= 0x00500000;  
+		  //this is 485
+		  //P1.29 is RD SEL
+		LPC_PINCON->PINMODE3 |= 0x00000001<<26;
+		LPC_GPIO1->FIODIR |= (1<<29);		/* P2.xx defined as Outputs */
+		//default is recive low
+		LPC_GPIO1->FIOCLR |= (1<<29);		
+		//LPC_GPIO1->FIOSET = (1<<29);			
+	}else if(id==3) {
+		//	LPC_PINCON->PINSEL4 &= ~0x0000000F;
+		//	LPC_PINCON->PINSEL4 |= 0x0000000A;	/* Enable RxD1 P2.1, TxD1 P2.0 */
+	}
+	return CPU_UART_REOPEN(id,bps);
+}
+
+
+1.网口配置方法是静态分配IP还是动态分配IP.
+2.如果是静态分配, 是把参数固化到程序里,还是通过刷运参卡写入
+

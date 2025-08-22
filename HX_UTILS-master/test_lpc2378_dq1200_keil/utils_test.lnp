@@ -1,0 +1,26 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\main.o"
+".\hx_atcmd.o"
+".\hx_board.o"
+".\hx_cpu.o"
+".\hx_debug.o"
+".\hx_device.o"
+".\hx_term.o"
+".\hx_term_cmds.o"
+".\hx_utils.o"
+".\hx_ver_def.o"
+".\hxd_uart.o"
+".\hxl_serial.o"
+".\jlink_dcc.o"
+".\me3630.o"
+".\mg3732.o"
+".\ne4110s.o"
+".\rak415.o"
+".\sim800c.o"
+".\sim7100c.o"
+".\sim7600c.o"
+--strict --scatter ".\utils_test.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\utils_test.map" -o .\utils_test.axf

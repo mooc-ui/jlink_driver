@@ -1,0 +1,8 @@
+--cpu ARM7TDMI
+".\lpc2300.o"
+".\main.o"
+".\jlink_dcc.o"
+--strict --scatter ".\dcc_test.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\dcc_test.map" -o .\dcc_test.axf
